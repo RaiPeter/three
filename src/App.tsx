@@ -18,6 +18,7 @@ function App() {
           <Bloom mipmapBlur intensity={1.2} />
         </EffectComposer>
       </Canvas>
+      <title>Home 3D</title>
       <UI />
     </>
   );

@@ -30,6 +30,7 @@ const UI = () => {
   const dispatch = useDispatch();
   return (
     <div style={{ ...styles, opacity: currentPage === "home" ? "" : "0" }}>
+      {currentPage === "store" ? <title>Store 3d</title> : ""}
       <button
         onClick={() => {
           dispatch(setCurrentPage("store"));

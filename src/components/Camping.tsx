@@ -6,6 +6,7 @@ Command: npx gltfjsx@6.5.3 .\public\models\Camping Asset Collection.glb -o .\src
 import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
+import { JSX } from "react";
 
 type GLTFResult = GLTF & {
   nodes: {

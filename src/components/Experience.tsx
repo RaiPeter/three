@@ -53,10 +53,10 @@ const Experience = () => {
       console.log(currentPage);
 
       if (meshFitCameraStore.current) {
-        if (controls.current) {
-          controls.current.smoothTime = 0.8;
-        }
-        controls.current?.fitToBox(meshFitCameraStore.current, true);
+      if (controls.current) {
+        controls.current.smoothTime = 0.8;
+      }
+      controls.current?.fitToBox(meshFitCameraStore.current, true);
       }
     } else {
       console.log(currentPage);
@@ -84,7 +84,7 @@ const Experience = () => {
     <>
       <CameraControls ref={controls} />
       <mesh ref={meshFitCameraHome} position-rotateZ={-0.5} visible={false}>
-        <boxGeometry args={[7.5, 2, 2]} />
+        <boxGeometry args={[9, 2, 2]} />
         <meshBasicMaterial color="orange" transparent opacity={0.5} />
       </mesh>
       <Text
@@ -108,7 +108,7 @@ const Experience = () => {
             <Environment preset="sunset" />
             <Float floatIntensity={4} rotationIntensity={5}>
               <Camping
-                scale={0.6}
+                scale={1.6}
                 rotation-y={degToRad(25)}
                 rotation-x={degToRad(40)}
                 position-y={-0.5}
@@ -120,7 +120,7 @@ const Experience = () => {
       <group position-y={degToRad(0)} position-x={3}>
         <Camping scale={0.6} />
         <mesh ref={meshFitCameraStore} visible={false}>
-          <boxGeometry args={[2, 1, 2]} />
+          <boxGeometry args={[4, 1, 2]} />
           <meshBasicMaterial color="red" transparent opacity={0.5} />
         </mesh>
       </group>
